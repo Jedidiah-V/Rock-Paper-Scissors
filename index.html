@@ -2,11 +2,33 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Rock Paper Scissors</title>
+  <title>Rock Paper Scissors vs. Your Boss</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Rock Paper Scissors!</h1>
-  <p>See the results in the console.</p>
-  <script src="Rock Paper Scissors.js"></script>
+  <div class="briefing">
+    <p>You want a raise. Your boss wants to give you a pay cut. Neither will budge. So you challenge him to...</p>
+    <h1>Rock! Paper! Scissors!</h1>
+    <p>Whoever wins 5 rounds first has his way. Click your choice!</p>
+  </div>
+  <div class="choices">
+    <div class="choice" id="rockbtn">
+      <img class="choiceimg" id="rockimg" src="images/rock2.png">
+    </div>
+    <div class="choice" id="paperbtn">
+      <img class="choiceimg" id="paperimg" src="images/paper2.png">  
+    </div>  
+    <div class="choice" id="scissorsbtn">
+      <img class="choiceimg" id="scissorsimg" src="images/scissors2.png">
+    </div>
+  </div>
+  <div class="results">
+    <div class="announcement"></div>
+    <div class="scoreboard">
+      <div class="playerscore"></div>
+      <div class="computerscore"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
